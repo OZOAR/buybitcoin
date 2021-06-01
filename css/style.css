@@ -1,0 +1,278 @@
+@font-face {
+    font-family: Raleway; /* Имя шрифта */
+    src: url(/fonts/Raleway-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
+   }
+   h1, h2, h3, a, p  {
+    font-family: Raleway;
+   }
+h2 {
+    padding-top: 20px;
+}
+.content-wrapper p {
+	font-size: 18px;
+}
+.main-wrapper {
+    background-color: #999b9c;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#main-h1 {
+	font-size: 2.3rem;
+}
+.content-wrapper {
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: white;
+}
+.main-breadcrumb {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.breadcrumb-item > a {
+    color: #4f565a
+}
+.chart-row{
+    margin-bottom: 10px;
+}
+
+.ch-w-10 {
+    width: 13%;
+}
+.ch-w-3 {
+    width: 5%;
+}
+.ch-w-1 {
+    width: 1%;
+}
+.all-pools li {
+	padding-top: 5%;
+	list-style: decimal;
+}
+.chart-row .col-9 {
+    border-radius: 4px;
+    height: 30px;
+    background-color: #4e50df;
+    margin-top: 5px;
+}
+.chart-row img {
+    width: 30px;
+}
+
+.faq-1 .toggler a {
+	text-decoration: none;
+	color: black;
+
+}
+.faq-1{
+	margin-left: 10%;
+}
+
+.faq-1 .faq-answer {
+	margin-left: 10%;
+}
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+.titular {
+display: block;
+line-height: 60px;
+margin: 0;
+text-align: center;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.horizontal-list li {
+		float: left;
+	}
+		.block {
+			margin: 25px 25px 0 0;
+			background: #394264;
+			border-radius: 5px;
+      float: left;
+      width: 300px;
+      overflow: hidden;
+		}
+		/******************************************** LEFT CONTAINER *****************************************/
+		.left-container {}
+			.menu-box {
+				height: 360px;
+			}
+
+			.donut-chart-block {
+				overflow: hidden;
+			}
+				.donut-chart-block .titular {
+					padding: 10px 0;
+				}
+				.os-percentages li {
+					width: 75px;
+					border-left: 1px solid #394264;
+					text-align: center;					
+					background: #50597b;
+				}
+					.os {
+						margin: 0;
+						padding: 10px 0 5px;
+						font-size: 15px;		
+					}
+						.os.ios {
+							border-top: 4px solid #e64c65;
+						}
+						.os.mac {
+							border-top: 4px solid #11a8ab;
+						}
+						.os.linux {
+							border-top: 4px solid #fcb150;
+						}
+						.os.win {
+							border-top: 4px solid #4fc4f6;
+						}
+					.os-percentage {
+						margin: 0;
+						padding: 0 0 15px 10px;
+						font-size: 25px;
+					}
+			.line-chart-block, .bar-chart-block {
+				height: 400px;
+			}
+				.line-chart {
+					height: 200px;
+					background: #11a8ab;
+				}
+				.time-lenght {
+					padding-top: 22px;
+					padding-left: 38px;
+          overflow: hidden;
+				}
+					.time-lenght-btn {
+						display: block;
+						width: 70px;
+						line-height: 32px;
+						background: #50597b;
+						border-radius: 5px;
+						font-size: 14px;
+						text-align: center;
+						margin-right: 5px;
+						-webkit-transition: background .3s;
+						transition: background .3s;
+					}
+						.time-lenght-btn:hover {
+							text-decoration: none;
+							background: #e64c65;
+						}
+				.month-data {
+					padding-top: 28px;
+				}
+					.month-data p {
+						display: inline-block;
+						margin: 0;
+						padding: 0 25px 15px;            
+						font-size: 16px;
+					}
+						.month-data p:last-child {
+							padding: 0 25px;
+              float: right;
+							font-size: 15px;
+						}
+						.increment {
+							color: #e64c65;
+						}
+
+/******************************************
+GRAFICO CIRCULAR PIE CHART
+******************************************/
+.donut-chart {
+  position: relative;
+	width: 200px;
+  height: 200px;
+	margin: 0 auto 2rem;
+	border-radius: 100%
+ }
+p.center-date {
+  background: #394264;
+  position: absolute;
+  text-align: center;
+	font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+.center-date span.scnd-font-color {
+ line-height: 0; 
+}
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 300px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+#porcion1 {
+    transform: rotate(0deg);
+  }
+
+#porcion1 .quesito {
+    background-color: #E64C65;
+    transform: rotate(76deg);
+  }
+#porcion2 {
+    transform: rotate(76deg);
+  }
+#porcion2 .quesito {
+    background-color: #11A8AB;
+    transform: rotate(140deg);
+  }
+#porcion3 {
+    transform: rotate(215deg);
+  }
+#porcion3 .quesito {
+    background-color: #4FC4F6;
+    transform: rotate(113deg);
+  }
+#porcionFin {
+    transform:rotate(-32deg);
+  }
+#porcionFin .quesito {
+    background-color: #FCB150;
+    transform: rotate(32deg);
+  }
+.nota-final {
+  clear: both;
+  color: #4FC4F6;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+.nota-final strong {
+  color: #E64C65;
+}
+.nota-final a {
+  color: #FCB150;
+  font-size: inherit;
+}
