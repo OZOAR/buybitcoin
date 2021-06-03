@@ -242,16 +242,126 @@
       </div>
     </div>
 
-     <div class="container">
+     <div class="container-fluid">
       <div class="row faq-1">
-          <p>
-              <a class="toggler text-left" style="width: 100%;"  data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><b>Mining pool</b></a>
-            </p>
+        <h2><b> FAQ’S</b></h2>
+            <a class="toggler  text-left" style="width: 100%;"  data-bs-toggle="collapse" href="#FAQCollapse1" role="button" aria-expanded="false" aria-controls="FAQCollapse1"><b>What parameters should be considered when choosing a pool? <img src="img/arrow-down.svg" alt=""> </b></a>
             <div class="row">
               <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="collapse multi-collapse" id="FAQCollapse1">
                   <div class="card card-body">
-                    Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    <ul>
+                      <li>
+                        <p>Pool Commission. Typically, the commission ranges from 1% to 5%.</p>            
+                      </li>
+                      <li>
+                        <p>Payment system (PPLNS, PPS, PPS+, FPPS, FPPS+ etc.)</p>
+                      </li>
+                      <li>
+                        <p>Pool capacity.</p>
+                      </li>
+                      <li>
+                        <p>Pool response speed (ping) - you need to check it by pinging the pool. It is good if ping is less than 100 ms.</p>
+                      </li>
+                      <p>There are multipools also. They produce any coins that are currently the most profitable on the chosen algorithm. Switching is most often automatic. Also coins can be automatically converted into one selected on many pools.</p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="toggler  text-left" style="width: 100%;"  data-bs-toggle="collapse" href="#FAQCollapse2" role="button" aria-expanded="false" aria-controls="FAQCollapse2"><b>What is the complexity of a network?<img src="img/arrow-down.svg" alt=""></b></a>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="FAQCollapse2">
+                  <div class="card card-body">
+                    <p>
+                      Network of each cryptocurrency has such a parameter as "block creation time" (For bitcoin it is 10 minutes).<br>
+                      How to hold this option regardless of how many miners are connected to the network? Because if there are many miners, they will find blocks too often, and if there are few of them, the blocks will be rare and network transactions will go very long.<br>
+                      If miners produce empty blocks and receive money for it, the coin will depreciate, and if blocks are found slowly -  transactions will be stopped and, again, the coin will depreciate.<br>
+                      This is where complexity begins to work. In simple terms, it is a challenge that miners have to solve to create a block, and it can change. The complexity depends on the hashrate network (the number of miners connected to the coin). If there are few miners - complexity falls, if there are many miners - complexity begins to grow and it starts to be more difficult for one particular miner to find the block.<br>
+                      Complexity is measured in hash (usually terrahash - TH), applied to mining it is a unit of work performed. Network capacity (number of miners) is measured in hash per second (TH/s). Network itself adjusts the complexity in such a way that Complexity/Network Capacity = Time for the next block. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="toggler  text-left" style="width: 100%;"  data-bs-toggle="collapse" href="#FAQCollapse3" role="button" aria-expanded="false" aria-controls="FAQCollapse3"><b>What are the payment systems on the pools?<img src="img/arrow-down.svg" alt=""></b></a>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="FAQCollapse3">
+                  <div class="card card-body">
+                    <p>
+                      PPS - simple payment per share
+                    </p>
+                    <p>PPLNS - last N share payment</p>
+                    <p>PPS + - payment per share +</p>
+                    <p>PROP - proportional payment</p>
+                    <p>FPPS - full payment per share<br></p>
+                    <p>Most popular payment systems: PPS/PPS+/PPLNS/FPPS </p>
+                    <p><b>PPS — (Pay Per Share)</b> - payment for each share. When using PPS miner receives a reward for each share accepted by the pool, regardless of whether the pool finds blocks. In this case, the pool determines the cost of each share independently based on the network complexity, network reward, block time, and the pool's own capacity.</p>
+                    <p><b>PPLNS (Pay Per Last N Shares)</b> — payment for the last N shares. Unlike PPS, there is no fixed fee for each share. The payment for PPLNS per round is similar to PROP, it is charged in proportion to the shares received, but with one big difference. A decreasing coefficient that changes from 0 to 1  with an increase in the sent shares is applied to the yours sent shares.
+                      The number of shares used to calculate PPLNS for all pools is different and strongly depends on the cryptocurrency. PPLNS encourages miners for long-term continuous mining.</p>
+                    <p><b>PPS+</b> is a combined pool payment method that combines standard PPS and PPLNS. Fixed block reward is distributed according to the PPS algorithm and commissions included in the block are distributed according to the PPLNS principle.</p>
+                    <p><b>FPPS (Full Pay-per-Share)</b> - similar to PPS+, but the commission included in the block is paid on the principle of PPS, not PPLNS.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="toggler  text-left" style="width: 100%;"  data-bs-toggle="collapse" href="#FAQCollapse4" role="button" aria-expanded="false" aria-controls="FAQCollapse4"><b>How does the Blockchain Work?<img src="img/arrow-down.svg" alt=""></b></a>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="FAQCollapse4">
+                  <div class="card card-body">
+                    <p>
+                      Blockchain is the basis of cryptocurrency. In order to understand what mining is, you have to understand what blockchain is firstly.<br>
+                      Blocks are the data about transactions within a system that are presented in cryptographic form. All the blocks are in a chain, so they’re connected. <br>
+                      Blockchain can be described as a database that stores all movements of virtual coins and information about all ever-existing wallets. All of this is specifically encrypted to create a chain of blocks and decomposed into millions of miners' computers. You can’t change anything in a block, because you also have to change the next block and every block till the end of the chain.<br>
+                      All blocks contain certain data and weigh 1 mb. Each block of the chain contains a specific key. And until it is decrypted, the block will not close. Once the cryptographic key to the block (hash) is found, the block closes and a new one is added. Miners look for new blocks and are rewarded for them. Blockchain operations and security are provided by miners.<br>
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="toggler  text-left" style="width: 100%;"  data-bs-toggle="collapse" href="#FAQCollapse5" role="button" aria-expanded="false" aria-controls="FAQCollapse5"><b>How does a transaction work?<img src="img/arrow-down.svg" alt=""></b></a>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="FAQCollapse5">
+                  <div class="card card-body">
+                    <ul>
+                        <p>1. A decided to transfer a certain amount of money to B. Before money reaches B they get to Mempool.<br>
+                          Mempool is the location of unprocessed transactions awaiting confirmation.
+                          (At this stage your payment was initiated and started to be tested for compliance with certain technical regulations, but it has not yet been recorded in any copy of the blockchain. The transaction is not yet confirmed.)
+                          </p>
+                        <p>2. Miners take a transaction for which a good reward is offered from the mempool and transfer it to the block. This transaction must then be confirmed by at least three other participants.
+                          (The higher the transaction commission, the faster miners confirm it.)</p>
+                        <p>
+                          3. Once miners have confirmed the transaction, the money reaches the recipient.
+                          Miners receive the reward for the new block, now it is 6,25 BTC.
+                          Miner income = voluntary transaction fees + reward for the block.</p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="toggler  text-left" style="width: 100%;"  data-bs-toggle="collapse" href="#FAQCollapse6" role="button" aria-expanded="false" aria-controls="FAQCollapse6"><b>How did bitcoin mining develop?<img src="img/arrow-down.svg" alt=""></b></a>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="FAQCollapse6">
+                  <div class="card card-body">
+                   <ul>
+                     <li>
+                       <p>-When Bitcoin was first introduced, it could be mined even on a regular laptop using a central processor (CPU).</p>
+                     </li>
+                     <li>
+                       <p>-Competition increased and GPU was used for more revenue. They produced higher hash rates with good energy efficiency and affordable devices.</p>
+                     </li>
+                     <li>
+                       <p>-The cost of bitcoin and the difficulty of mining continued to rise, and ASIC replaced GPU. Powerful and easy-to-use devices instantly became popular.</p>
+                     </li>
+                     <li>
+                       <p>-The number of miners increased steadily. Consequently, the complexity grew and, over time, it was possible to catch a block already once a month or even once a year (depending on the complexity and luck). As a result, miners began to cooperate into groups (pools) and share founded bitcoins according to capacity. </p>
+                     </li>
+                   </ul>
                   </div>
                 </div>
               </div>

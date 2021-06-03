@@ -58,15 +58,24 @@ h2 {
     width: 30px;
 }
 
-.faq-1 .toggler a {
+.faq-1 a {
 	text-decoration: none;
-	color: black;
+	color: black !important;
 
 }
-.faq-1{
-	margin-left: 10%;
+.faq-1 .toggler {
+	padding-top: 5%	;
 }
-
+.faq-1 .toggler img {
+	width: 2%;
+	margin-left: 2%
+}
+.faq-1 ul {
+	padding-left: 3%;
+}
+.faq-1 ul > li {
+	padding-left: 2%;
+}
 .faq-1 .faq-answer {
 	margin-left: 10%;
 }
